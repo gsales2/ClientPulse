@@ -5,12 +5,18 @@ header {
     padding: 10px 20px;
     position: relative;
     height: 60px;
-    background-color: var(--background-secondary-color);
+    background-color: var(--background-primary-color);
+    border-bottom: solid 2px black;
 }
 
 .logo-header {
     width: 55px;
     height: auto;
+}
+
+.logo-nome {
+    width: auto;
+    height: 20px;
 }
 
 #menu {
@@ -120,4 +126,33 @@ nav li a:hover {
 
 .nav .change {
     display: block;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0 2rem;
+    }
+
+    #menu-bar {
+        display: none;
+    }
+
+    .menu-bg {
+        display: none;
+    }
+
+    .nav {
+        all: unset;
+        display: block;
+    }
+
+    .nav ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .nav ul li a{
+        color: black;
+    }
+
 }

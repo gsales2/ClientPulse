@@ -21,13 +21,12 @@
 
 }
 
-/* Removemos o overflow do body */
 body {}
 
-/* Aplicamos o overflow no novo wrapper */
+
 #page-wrapper {
     overflow-x: hidden;
-    position: relative; /* Garante um contexto de empilhamento adequado */
+    position: relative; 
 }
 
 main {
