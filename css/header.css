@@ -3,11 +3,33 @@ body {
     background-color: #6c7A86;
 }
 
+header {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+    height: 60px;
+}
+
+.logo-header {
+    width: 35px;
+    height: auto;
+}
+
+#menu {
+    z-index: 10;
+    position: relative;
+}
+
 #menu-bar {
-    width: 45px;
-    height: 40px;
-    margin: 30px 0 20px 20px;
+    width: 30px;
+    height: 25px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .bar {
@@ -15,7 +37,7 @@ body {
     width: 100%;
     background-color: #DC052D;
     display: block;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: 0.3s ease;
 }
 
@@ -24,26 +46,31 @@ body {
 }
 
 #bar2 {
-    transform: translateY(4px);
+    transform: translateY(-2px);
 }
 
 .nav {
-    transition: 0.3s ease;
-    display: ;
+    position: absolute;
+    top: 70px;
+    right: 25px;
+    z-index: 5;
+    text-align: right;
+    display: none;
 }
 
 .nav ul {
-    padding: 0 22px;
+    margin: 0;
+    padding: 0;
 }
 
 .nav li {
     list-style: none;
-    padding: 12px 0;
+    padding: 8px 0;
 }
 
 .nav li a {
     color: var(--text-primary-color);
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -54,16 +81,19 @@ nav li a:hover {
 .menu-bg #menu {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
 }
 
 .menu-bg {
+    position: absolute;
+    top: 15px;
+    right: 15px;
     width: 0;
     height: 0;
-    margin: 30px 0 20px 20px;
     background: radial-gradient(circle, #DC052D, #DC052D);
     border-radius: 50%;
     transition: 0.3s ease;
+    z-index: 1;
 }
 
 .change {
@@ -75,7 +105,7 @@ nav li a:hover {
 }
 
 .change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
+    transform: translateY(11px) rotateZ(-45deg);
 }
 
 .change #bar2 {
@@ -83,11 +113,15 @@ nav li a:hover {
 }
 
 .change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
+    transform: translateY(-10px) rotateZ(45deg);
 }
 
 .change-bg {
-    width: 520px;
-    height: 460px;
-    transform: translate(-60%, -30%);
+    width: 200px;
+    height: 560px;
+    transform: translate(40%, -40%);
+}
+
+.nav .change {
+    display: block;
 }
