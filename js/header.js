@@ -6,4 +6,5 @@ export function menuOnClick() {
     global.menuBar.classList.toggle("change");
     global.nav.classList.toggle("change");
     global.menuBg.classList.toggle("change-bg")
+    global.body.classList.toggle("no-scroll")
 }

@@ -21,6 +21,19 @@
 
 }
 
+/* Removemos o overflow do body */
+body {}
+
+/* Aplicamos o overflow no novo wrapper */
+#page-wrapper {
+    overflow-x: hidden;
+    position: relative; /* Garante um contexto de empilhamento adequado */
+}
+
+body.no-scroll {
+    overflow: hidden; /* Impede a rolagem vertical e horizontal */
+}
+
 main {
     width: auto;
     height: 800px;
