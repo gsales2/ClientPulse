@@ -4,3 +4,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+:root {
+/*CORES*/
+    --text-primary-color: #ffffff;
+
+    --background-primary-color: #ffffff
+
+/*PESOS*/
+    --title-weight: 700;
+    --text-weight: 400;
+    --menu-text-weight: 500;    
+
+}
