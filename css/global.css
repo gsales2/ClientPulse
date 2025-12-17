@@ -9,11 +9,19 @@
 /*CORES*/
     --text-primary-color: #ffffff;
 
-    --background-primary-color: #ffffff
+    --background-primary-color: #ffffff;
+    --background-secondary-color: #3abe99;
+
+    --secondary-color: #133a61;
 
 /*PESOS*/
     --title-weight: 700;
     --text-weight: 400;
     --menu-text-weight: 500;    
 
+}
+
+main {
+    width: auto;
+    height: 800px;
 }
