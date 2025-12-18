@@ -6,7 +6,7 @@ header {
     position: relative;
     height: 60px;
     background-color: var(--background-primary-color);
-    border-bottom: solid 2px black;
+    box-shadow: 0 0 5px 0;
 }
 
 .logo-header {
@@ -130,11 +130,17 @@ nav li a:hover {
 
 @media screen and (min-width: 768px) {
     header {
+        display: flex;
+        justify-content: flex-start;
         padding: 0 2rem;
     }
 
     #menu-bar {
         display: none;
+    }
+
+    #menu {
+        margin-left: auto;
     }
 
     .menu-bg {
@@ -149,6 +155,7 @@ nav li a:hover {
     .nav ul {
         display: flex;
         gap: 1.5rem;
+        font-weight: var(--menu-text-weight);
     }
 
     .nav ul li a{
@@ -156,3 +163,8 @@ nav li a:hover {
     }
 
 }
+
+@media screen and (min-width: 1024px) {
+    .nav ul {
+        gap: 3.5rem;
+    }
