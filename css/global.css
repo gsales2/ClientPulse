@@ -6,6 +6,10 @@
 }
 
 :root {
+/*FONTES*/
+    --font-titulo: 'Outfit', sans-serif;
+    --font-corpo: 'Plus Jakarta Sans', sans-serif;
+
 /*CORES*/
     --text-primary-color: #ffffff;
 
@@ -15,13 +19,16 @@
     --secondary-color: #133a61;
 
 /*PESOS*/
+    --low-title-weight: 600;
     --title-weight: 700;
     --text-weight: 400;
     --menu-text-weight: 500;    
 
 }
 
-body {}
+body {
+    background-color: rgb(236, 235, 235);
+}
 
 
 #page-wrapper {
