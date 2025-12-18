@@ -28,7 +28,16 @@
 
 body {
     background-color: rgb(236, 235, 235);
+    font-family: var(--font-corpo);
+    font-weight: var(--text-weight);
 }
+
+h1, h2, h3, h4 {
+    font-family: var(--font-titulo);
+    font-weight: var(--title-weight);
+}
+
+
 
 
 #page-wrapper {

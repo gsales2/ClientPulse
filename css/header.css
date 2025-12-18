@@ -152,6 +152,7 @@ nav li a:hover {
         display: flex;
         gap: 1.5rem;
         margin-left: 150px;
+        font-weight: var(--menu-text-weight);
     }
 
     .nav ul li a{
