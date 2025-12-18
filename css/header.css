@@ -139,6 +139,10 @@ nav li a:hover {
         display: none;
     }
 
+    #menu {
+        margin-left: auto;
+    }
+
     .menu-bg {
         display: none;
     }
@@ -151,7 +155,6 @@ nav li a:hover {
     .nav ul {
         display: flex;
         gap: 1.5rem;
-        margin-left: 150px;
         font-weight: var(--menu-text-weight);
     }
 
@@ -159,7 +162,9 @@ nav li a:hover {
         color: black;
     }
 
-    .logo-nome {    
-    }
-
 }
+
+@media screen and (min-width: 1024px) {
+    .nav ul {
+        gap: 3.5rem;
+    }
